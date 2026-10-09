@@ -12,7 +12,7 @@
 > The founder's words, verbatim, from the first session.
 
 ## The idea in one sentence
-Latest version first. Keep older versions to show how the idea changed.
+<!-- Latest version first. Keep older versions to show how the idea changed. Scope changes go here only. -->
 - YYYY-MM-DD: …
 
 ## Dimension status
@@ -31,18 +31,25 @@ Latest version first. Keep older versions to show how the idea changed.
 | D10 | Pre-mortem and kill criteria | not started | |
 | D11 | Focus and founder behavior | not started | |
 
-Status: not started | weak | clear (unknown) | solid
+<!-- Status: not started | weak | clear (unknown) | solid -->
 
 ## Known vs believed
+<!-- Only claims about the world (customers, market, behavior), graded 0–9. Never founder decisions. Evidence = what the founder reported, never the interviewer's arguments. -->
 | Claim | Evidence | Level (0–9) |
 |---|---|---|
 | | | |
 
 ## Assumptions (ranked by risk)
 1. **[RISKIEST]** …
+   - *Interviewer challenge:* the strongest argument against it, raised by the interviewer (not evidence).
 
 ## Red flags
+<!-- Warning signs in the idea or the founder's thinking. Not open questions: those go in "Parked for later". -->
 - **<flag>** (D#, [SOURCE]): what was said, and why it matters.
+
+## Parked for later
+<!-- Topics raised early that belong to a later dimension. Remove them when that dimension covers them. -->
+- (D#) …
 
 ## Pre-mortem
 - **Failure story:** …

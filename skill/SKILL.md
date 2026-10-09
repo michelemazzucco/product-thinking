@@ -81,7 +81,13 @@ Read `references/question-bank.md`. Work through the dimensions in the order cho
 3. When the dimension is done, give a **checkpoint** in 2–4 lines: what is now known (with evidence level), what is still only believed, any red flag. Then update the dossier (status of the dimension, claims, assumptions, red flags).
 4. Ask whether to continue to the next dimension or stop for now.
 
-If the founder goes off on a tangent that belongs to another dimension, note it, and come back to it in that dimension.
+If the founder goes off on a tangent that belongs to another dimension, add it to "Parked for later" in the dossier, and come back to it in that dimension.
+
+**Dossier hygiene.** Keep each entry in its own section:
+- **Known vs believed** holds only claims about the world (customers, market, behavior) with the evidence the *founder* reported. Founder decisions (scope, pricing choice) go in "The idea in one sentence", not here.
+- **Your own arguments are never evidence.** Record the strongest counter-argument you raised as an *Interviewer challenge* under the assumption it attacks. It does not change any evidence level.
+- **Red flags** are warning signs in the idea or the founder's thinking. Open topics for later dimensions go in "Parked for later".
+- Do not copy the template's `<!-- -->` comments into the content. Leave them as they are.
 
 Do not skip D9 (riskiest assumption and smallest test) or D10 (pre-mortem and kill criteria). They make the session useful.
 
