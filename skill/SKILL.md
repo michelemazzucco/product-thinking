@@ -1,6 +1,6 @@
 ---
 name: product-thinking
-description: Deep, skeptical interview that stress-tests a product or startup idea before anything gets built. Asks one hard question at a time across problem, customer, alternatives, evidence, money, why-now, distribution, moat, riskiest assumption and pre-mortem, grades every claim on an evidence ladder, and keeps a resumable dossier in ideas/<slug>.md. Use when the user wants to validate an idea, "grill me", "poke holes", "is this worth building", "challenge my idea", "think this through before I build", or wants to continue a previous idea interrogation.
+description: Deep, skeptical interview that stress-tests a product or startup idea before anything gets built. Asks one hard question at a time across problem, customer, alternatives, evidence, money, why-now, distribution, moat, riskiest assumption and pre-mortem, grades every claim on an evidence ladder, and keeps a resumable dossier in ~/ideas/<YY-MM>/<YY-MM-DD>-<slug>.md. Use when the user wants to validate an idea, "grill me", "poke holes", "is this worth building", "challenge my idea", "think this through before I build", or wants to continue a previous idea interrogation.
 ---
 
 # Product thinking: interrogate the idea before building it
@@ -17,8 +17,11 @@ Reference files (read when needed, not all up front):
 
 ## 1. Start or resume
 
-1. Look for `ideas/*.md` in the current working directory.
-   - If the user named an idea that matches a dossier, or there is exactly one and the user said "continue", **resume** (section 6).
+Dossiers live in `~/ideas/`, one folder per month: `~/ideas/<YY-MM>/<YY-MM-DD>-<slug>.md`, dated by the day the idea was created (for example `~/ideas/26-09/26-09-12-home-gym-workouts.md`). The file name never changes after that, even when you resume on a later day.
+
+1. Look for `~/ideas/*/*.md`.
+   - If the user named an idea that matches a dossier, **resume** it (section 6).
+   - If the user said "continue" without a name, use AskUserQuestion to list the most recent dossiers (by "Last session") and ask which one.
    - Otherwise start a new one.
 2. New idea: ask the founder to pitch it in their own words, as long as they like. This is the only time they get to pitch. Do not react to the pitch with praise or critique.
 3. Then use AskUserQuestion once to set up the session:
@@ -26,7 +29,7 @@ Reference files (read when needed, not all up front):
    - **Stage:** Idea only / Prototype or a few testers / Users, no revenue / Revenue.
    - **Type:** B2B / Consumer / Marketplace or network / Other. Also ask, if it is unclear, whether it is a lifestyle business or venture-scale.
    Pre-select your best guess from the pitch as the first option.
-4. Create the dossier `ideas/<slug>.md` from `templates/dossier.md` immediately (short kebab-case slug from the idea). Fill in the pitch verbatim, tone, stage, type, date.
+4. Create the dossier from `templates/dossier.md` immediately, at `~/ideas/<YY-MM>/<YY-MM-DD>-<slug>.md` (today's date, short kebab-case slug from the idea). If `~/ideas` does not exist, ask the founder for permission before you create it. If they say no, ask where to save the dossier instead. The month folder can be created without asking. Fill in the pitch verbatim, tone, stage, type, date.
 5. Read `references/modules.md` to pick the dimension order for this stage and type. Tell the founder in one or two lines what you will cover and that they can stop at any time and resume later.
 
 ## 2. Interview rules
