@@ -17,7 +17,7 @@ Source list: [jsumnersmith/product-management](https://github.com/jsumnersmith/p
 | 8 | Lenny's Podcast — Jeff Weinstein (Stripe) | WEINSTEIN | [lennys/jeff-weinstein.md](lennys/jeff-weinstein.md) | transcript | Done. Manual captions. |
 | 9 | Lenny's Podcast — Hamilton Helmer (7 Powers) | HELMER | [lennys/hamilton-helmer.md](lennys/hamilton-helmer.md) | transcript | Done. The episode does not define all 7 powers. |
 | 10 | Lenny's Podcast — Ian McAllister (working backwards) | MCALLISTER | [lennys/ian-mcallister.md](lennys/ian-mcallister.md) | transcript | Done. Auto-captions. About half of the episode is career advice. |
-| 11 | Invest Like the Best — Patrick & John Collison | COLLISON | [colossus/collison.md](colossus/collison.md) | transcript | **Partial.** YouTube auto-captions for 5 of the 7 clips. Clips #2 (global commerce) and #7 (personal questions) were blocked by HTTP 429. |
+| 11 | Invest Like the Best — Patrick & John Collison | COLLISON | [colossus/collison.md](colossus/collison.md) | transcript | Done. Official transcript is gated. Full Whisper transcript of the podcast audio, plus YouTube auto-captions for 5 of the 7 clips. |
 | 12 | Invest Like the Best — Andy Rachleff | RACHLEFF | [colossus/rachleff.md](colossus/rachleff.md) | transcript | Done. Official transcript (Wayback Machine copy). |
 | 13 | Invest Like the Best — Daniel Ek | EK | [colossus/ek.md](colossus/ek.md) | transcript | Done. Official transcript (Wayback Machine copy). |
 | 14 | Invest Like the Best — Systrom & Krieger (Instagram) | KRIEGER | [colossus/krieger.md](colossus/krieger.md) | transcript | Done. Official transcript (Wayback Machine copy). It is a joint interview, so the quotes name the speaker. |
@@ -28,9 +28,8 @@ Source list: [jsumnersmith/product-management](https://github.com/jsumnersmith/p
 | 19 | Schumpeter on Strategy — Jerry Neumann | NEUMANN | [articles/schumpeter-strategy.md](articles/schumpeter-strategy.md) | article | Done. |
 
 ## Verification done
-- All quotes in the 11 transcript notes were checked by a script against the clean transcripts. In the Collison note, some caption errors were fixed and filler words were removed. The note says this.
+- All quotes in the 11 transcript notes were checked by a script against the clean transcripts. The Collison quotes were also checked against a second, independent transcript (Whisper, from the podcast audio).
 - The book and article quotes come only from text that the agents fetched. They were not checked again by script.
 
 ## Open gaps
-- Collison clips #2 and #7. To get them, run `yt-dlp` with `--cookies-from-browser`, or try again later. The video IDs are `H_kOobyDT1U` and `PDMBQZScMBo`.
 - None of the 4 books was read. If you have the books, compare the "secondary" notes with them.

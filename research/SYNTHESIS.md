@@ -92,6 +92,7 @@ The order follows a natural interview sequence. Each dimension has: **the goal**
 - Describe x (the situation before) and y (the situation after) in the customer's words. Would they pay to go from x to y? [SINGER]
 - Is anyone building a workaround now with spreadsheets, scripts or tape? Show me one. [CHRISTENSEN] [KRIEGER]
 - If nobody tries to solve this problem today, why do you think people want it solved? [KRIEGER]
+- Is there a boring obstacle (tax, fraud, compliance, a local payment method) that makes people give up? Have you seen someone give up because of it? [COLLISON]
 
 **Red flags:** the founder imagined the problem in a room [MOESTA]; the job is an adjective ("convenience"); complaints but no action; a vitamin, not a painkiller [MCALLISTER].
 
@@ -144,6 +145,7 @@ The order follows a natural interview sequence. Each dimension has: **the goal**
 - Who are the five to ten target customers that you can send a text message to today? [WEINSTEIN]
 - Is any growth organic word of mouth? Is it growing? [RACHLEFF]
 - Do you use vanity metrics (totals) or actionable metrics (cohorts, per customer)? [RIES]
+- How will you know the product caused the result, and the customer would not have got it anyway? What would you ask them, or what would you test? [COLLISON]
 
 **Red flags:** validation = waitlist and compliments; no interviews with switchers; users do not care when the product breaks.
 
@@ -207,6 +209,7 @@ The order follows a natural interview sequence. Each dimension has: **the goal**
 - If you say you have a data advantage: at what point does more data stop improving the product? [HELMER]
 - If you are right, why has nobody done this? [RACHLEFF]
 - Are you copying a method from another company without the system that made it work there? [EK]
+- Are you taking an existing profit pool, or making profits nobody makes yet? What does your plan assume will stay the same? [COLLISON]
 
 **Red flags:** the moat is "team", "speed" or "execution" [HELMER]; a "flywheel" that has no material effect; "network effects" without a mechanism [GURLEY]; right, but a consensus idea [RACHLEFF]; stuck in the middle, neither a niche nor real scale [EK].
 

@@ -93,7 +93,6 @@ research/                   20 notes, index, synthesis
 ## Limitations
 
 - **The book notes are secondary.** The notes on *Inspired*, *Demand-Side Sales 101*, *Competing Against Luck* and *The Lean Startup* come from the authors' own articles, excerpts and summaries, not from the books. Each note says what was used.
-- **The Collison episode is incomplete.** Two of the seven clips were not available, so the note covers five.
 - **It's an early version.** It has been tested on very few ideas. It will probably push too hard on some questions and not enough on others.
 - **It won't tell you if your idea is good.** It tells you how much of it you actually know, and what to test next.
 
