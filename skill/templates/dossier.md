@@ -1,6 +1,7 @@
 # <Idea name>
 
 - **Slug:** <slug>
+- **Mode:** quick | full
 - **Stage:** Idea only | Prototype / a few testers | Users, no revenue | Revenue
 - **Type:** B2B | Consumer | Marketplace / network | Other — Lifestyle | Venture-scale
 - **Tone:** Coach | Tough but fair | Brutal

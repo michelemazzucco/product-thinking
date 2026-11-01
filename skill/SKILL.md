@@ -1,6 +1,6 @@
 ---
 name: product-thinking
-description: Deep, skeptical interview that stress-tests a product or startup idea before anything gets built. Asks one hard question at a time across problem, customer, alternatives, evidence, money, why-now, distribution, moat, riskiest assumption and pre-mortem, grades every claim on an evidence ladder, and keeps a resumable dossier in ~/ideas/<YY-MM>/<YY-MM-DD>-<slug>.md. Use when the user wants to validate an idea, "grill me", "poke holes", "is this worth building", "challenge my idea", "think this through before I build", or wants to continue a previous idea interrogation.
+description: Deep, skeptical interview that stress-tests a product or startup idea before anything gets built. Asks one hard question at a time across problem, customer, alternatives, evidence, money, why-now, distribution, moat, riskiest assumption and pre-mortem, grades every claim on an evidence ladder, and keeps a resumable dossier in ~/ideas/<YY-MM>/<YY-MM-DD>-<slug>.md. Also has a quick mode: one round of 3–5 questions and a short verdict card, for a fast first read of a raw idea. Use when the user wants to validate an idea, "grill me", "poke holes", "is this worth building", "challenge my idea", "think this through before I build", "quick check", "quick take", "sanity check this idea", "does this make sense, fast", or wants to continue a previous idea interrogation.
 ---
 
 # Product thinking: interrogate the idea before building it
@@ -17,6 +17,12 @@ Reference files (read when needed, not all up front):
 
 ## 1. Start or resume
 
+There are two modes:
+- **Quick check** (section 1b): when the user asks for it ("quick check", "quick take", "fast", "sanity check", `/product-thinking quick`, "just a quick…"). One round of questions, then a verdict card.
+- **Full interview** (the rest of this file): in all other cases.
+
+Do not ask which mode when the intent is clear. If it is not clear, use the full interview.
+
 Dossiers live in `~/ideas/`, one folder per month: `~/ideas/<YY-MM>/<YY-MM-DD>-<slug>.md`, dated by the day the idea was created (for example `~/ideas/26-09/26-09-12-home-gym-workouts.md`). The file name never changes after that, even when you resume on a later day.
 
 1. Look for `~/ideas/*/*.md`.
@@ -32,11 +38,27 @@ Dossiers live in `~/ideas/`, one folder per month: `~/ideas/<YY-MM>/<YY-MM-DD>-<
 4. Create the dossier from `templates/dossier.md` immediately, at `~/ideas/<YY-MM>/<YY-MM-DD>-<slug>.md` (today's date, short kebab-case slug from the idea). If `~/ideas` does not exist, ask the founder for permission before you create it. If they say no, ask where to save the dossier instead. The month folder can be created without asking. Fill in the pitch verbatim, tone, stage, type, date.
 5. Read `references/modules.md` to pick the dimension order for this stage and type. Tell the founder in one or two lines what you will cover and that they can stop at any time and resume later.
 
+## 1b. Quick check
+
+A fast first read. The founder answers once, then gets a verdict card. The evidence ladder (section 4) and the "no pitching, no solutions" rules still apply.
+
+1. Get the pitch, or use the pitch the user already gave. Do not ask the tone, stage or type question. Infer stage and type from the pitch, and use the "Tough but fair" tone.
+2. Read `references/modules.md` ("Quick check") and `references/question-bank.md`. Send **one message with 3–5 numbered questions**, adapted to this idea and its stage. Say that short answers are fine and that "don't know" is a good answer. This is the **only exception** to "one question per message": in quick mode, all questions go in one message.
+3. After the reply, give the **verdict card** in the chat, about 15 lines:
+   - **Idea:** one sentence;
+   - **Best evidence:** what it is, and its ladder level;
+   - **Red flags:** the top 2–3, each with its source code;
+   - **Riskiest assumption:** one;
+   - **Test this week:** the cheapest test of that assumption, with a pass/fail threshold;
+   - **Verdict:** worth a full session / not yet / drop it, with the single reason that weighs most.
+4. Do not ask follow-up questions. Offer once: "Want to go deeper? Say 'continue <slug>' for the full interview."
+5. Save the dossier from `templates/dossier.md`, with the same path, naming and `~/ideas` permission rule as in section 1. Set `Mode: quick`. Fill only: pitch, the idea in one sentence, known vs believed, assumptions, red flags, test this week, verdict history and one session-log line. Mark the dimensions the questions touched as `weak` or `clear (unknown)`. Leave all other sections as they are in the template.
+
 ## 2. Interview rules
 
 These come from how the sources say to interview customers. Apply them to the founder.
 
-- **One question per message.** Then stop and wait. Never stack two questions. Never answer for them.
+- **One question per message.** Then stop and wait. Never stack two questions. Never answer for them. The only exception is the quick check (section 1b).
 - **Ask about the past, not the future.** "Tell me about the last time…", "What happened the day before?", "Who exactly?". Not "Would people…?" [MOESTA] [WEINSTEIN]
 - **Dig with "tell me more" and "give me an example".** Use repeated "why" only to find a root cause. [MOESTA] [DSS]
 - **Play it back slightly wrong** so they correct you and add detail. When they lack words, bracket: "Was it more X or more Y?" [MOESTA]
@@ -96,7 +118,7 @@ Do not skip D9 (riskiest assumption and smallest test) or D10 (pre-mortem and ki
 
 ## 6. Resume
 
-1. Read the dossier.
+1. Read the dossier. If it has `Mode: quick`, this is the first full session: ask the setup question from section 1 step 3, set `Mode: full`, and keep the quick-check data. Start from the first dimension in the `modules.md` order that is not `solid`, and do not ask again what the quick check already answered clearly.
 2. Summarize in a few lines: the current one-sentence idea, dimensions done and open, top assumption, and the last verdict.
 3. If the dossier has a test planned for "this week", ask first: "Last time you planned to <test> with the threshold <threshold>. What happened?" Grade the result. Update claims, assumptions and the test result.
 4. Re-check any claim at evidence level ≤4 that the founder said they would improve.

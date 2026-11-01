@@ -20,6 +20,17 @@ Add these questions inside the dimension shown in brackets.
 - **Lifestyle / indie vs. venture-scale** (D5, D8): which kind it is, and if the plan fits that kind. [NEUMANN] [EK: niche or scale]
 
 
+## Quick check: which questions to pick
+
+Pick 3–5 questions, one per dimension, from the dimensions for the inferred stage. Choose the dimensions where the pitch is weakest. Always include one D9-style question about the best evidence so far, or what the founder could test this week.
+
+| Stage | Pick from |
+|---|---|
+| Idea only | D1 (last time the problem happened), D2 (one real person), D3 (what they use today), D6 (why now), D8 (incumbent ships it as a feature) |
+| Prototype / a few testers | D2, D3, D4 (repeated use), D5 (anyone paid) |
+| Users or revenue | D4 (pull), D5 (unit economics), D7 (where the next 100 come from), D8 |
+| Marketplace / network | add one Gurley question (cold start or fragmented supply) |
+
 ## Where the sources disagree
 
 | Tension | Side A | Side B | How the skill handles it |

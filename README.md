@@ -1,6 +1,6 @@
 # product-thinking
 
-A [Claude Code](https://claude.com/claude-code) skill that interviews you about a product idea before you build it. It asks one hard question at a time, grades every answer by how much real evidence is behind it, and keeps a dossier you can come back to.
+A [Claude Code](https://claude.com/claude-code) skill that interviews you about a product idea before you build it. It asks one hard question at a time, grades every answer by how much real evidence is behind it, and keeps a dossier you can come back to. If you only have five minutes, there is also a [quick check](#quick-check).
 
 ## The problem
 
@@ -22,6 +22,12 @@ You pitch the idea once, in your own words. After that the skill asks and you an
 - **A dossier** saved in `~/ideas/`, one folder per month (`~/ideas/26-09/26-09-12-my-idea.md`). The skill asks before creating `~/ideas` the first time. You can stop at any point and continue in another session. When you come back, the first question is what happened with the test you planned.
 
 At the end you get the assumptions ranked by risk, a pre-mortem, one cheap test for this week with a pass/fail threshold agreed before running it, and a verdict: go, not yet, or no-go. "Not yet" is the normal verdict for most ideas, and that's fine.
+
+### Quick check
+
+Sometimes you just had an idea on a walk and want to know if it's worth an evening, not a full interview. Say "quick check" (or `/product-thinking quick`) with the pitch. The skill asks 3 to 5 questions in one message, you answer them all in one reply (short answers are fine), and you get a small verdict card: the best evidence you have, the main red flags, the riskiest assumption, one test for this week, and whether it deserves a full session.
+
+The quick check is saved in `~/ideas/` like any other dossier. If it looks promising, say "continue <idea>" and the full interview starts from there, without asking again what you already answered.
 
 ### The evidence ladder
 
@@ -66,7 +72,7 @@ git clone https://github.com/michelemazzucco/product-thinking.git
 ln -s "$(pwd)/product-thinking/skill" ~/.claude/skills/product-thinking
 ```
 
-Start a new Claude Code session, then type `/product-thinking`, or just say "grill me on this idea". To continue, say "continue my idea" from any folder.
+Start a new Claude Code session, then type `/product-thinking`, or just say "grill me on this idea". For the short version, say "quick check" with your idea, or type `/product-thinking quick`. To continue, say "continue my idea" from any folder.
 
 ## Where the questions come from
 
@@ -81,10 +87,10 @@ Everything is in [`research/`](research/):
 
 ```
 skill/
-  SKILL.md                  interview flow, rules, tones, evidence ladder
+  SKILL.md                  interview flow, quick check, rules, tones, evidence ladder
   references/
     question-bank.md        the 12 dimensions: questions, deeper questions, red flags
-    modules.md              order by stage, extras by business type, source tensions
+    modules.md              order by stage, quick check picks, extras by business type, source tensions
     sources.md              source codes, links, short quotes
   templates/dossier.md
 research/                   20 notes, index, synthesis
